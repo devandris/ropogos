@@ -1,0 +1,50 @@
+### get investor data
+GET http://{{host}}:{{port}}/v1/investors/c5bef7c7-df5a-4256-9298-58fb2b310163
+Content-Type: application/json
+Authorization: Basic test test
+
+### all investments
+GET http://{{host}}:{{port}}/v1/investments/?investorId=c5bef7c7-df5a-4256-9298-58fb2b310163
+Content-Type: application/json
+Authorization: Basic test test
+
+### one investments
+GET http://{{host}}:{{port}}/v1/investments/f2093e07-5a7d-45c0-affe-ca8ffb2a3cba
+Content-Type: application/json
+Authorization: Basic test test
+
+### campaigns
+GET http://{{host}}:{{port}}/v1/campaigns/
+Content-Type: application/json
+Authorization: Basic test test
+
+### waves of an existing campaign (10)
+GET http://{{host}}:{{port}}/v1/waves/i?campaignId=7a47af9c-4fed-4f25-bcb3-60eae9c87e07
+Content-Type: application/json
+Authorization: Basic test test
+
+### payments for cash investment (10)
+GET http://{{host}}:{{port}}/v1/payments/?investmentId=f2093e07-5a7d-45c0-affe-ca8ffb2a3cba
+Content-Type: application/json
+Authorization: Basic test test
+
+### payments for voucher investment (10)
+GET http://{{host}}:{{port}}/v1/payments/?investmentId=34d75c5f-a511-4ab5-8b61-cbd877ffc934
+Content-Type: application/json
+Authorization: Basic test test
+
+### payments for cash investment (9)
+GET http://{{host}}:{{port}}/v1/payments/?investmentId=a5892830-b531-4bae-9451-79ff2a6c23cd
+Content-Type: application/json
+Authorization: Basic test test
+
+### payments for cash investment (8)
+GET http://{{host}}:{{port}}/v1/payments/?investmentId=7d583188-fb8d-41a2-916d-3f26f2096dfe
+Content-Type: application/json
+Authorization: Basic test test
+
+### vouchers
+GET http://{{host}}:{{port}}/v1/vouchers/?investorId=c5bef7c7-df5a-4256-9298-58fb2b310163
+Content-Type: application/json
+Authorization: Basic test test
+
